@@ -1,0 +1,12 @@
+[package]
+name = "zed-cmake"
+version = "0.2.0"
+edition = "2024"
+description = "CMake extension for Zed editor"
+license = "MIT"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+zed_extension_api = "0.7"

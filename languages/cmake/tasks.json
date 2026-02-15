@@ -1,0 +1,82 @@
+[
+  {
+    "label": "CMake: Configure (Debug)",
+    "command": "cmake",
+    "args": ["-B", "build", "-DCMAKE_BUILD_TYPE=Debug", "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON"],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "tags": ["cmake-project"],
+    "reveal": "always"
+  },
+  {
+    "label": "CMake: Configure (Release)",
+    "command": "cmake",
+    "args": ["-B", "build", "-DCMAKE_BUILD_TYPE=Release", "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON"],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "tags": ["cmake-project"],
+    "reveal": "always"
+  },
+  {
+    "label": "CMake: Build All",
+    "command": "cmake",
+    "args": ["--build", "build", "--parallel"],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "tags": ["cmake-project"],
+    "reveal": "always"
+  },
+  {
+    "label": "CMake: Build Target",
+    "command": "cmake",
+    "args": ["--build", "build", "--target", "$ZED_CUSTOM_cmake_target", "--parallel"],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "tags": ["cmake-executable", "cmake-library", "cmake-custom-target"],
+    "reveal": "always"
+  },
+  {
+    "label": "CMake: Run Executable",
+    "command": "./build/$ZED_CUSTOM_cmake_target",
+    "args": [],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "tags": ["cmake-executable"],
+    "reveal": "always"
+  },
+  {
+    "label": "CMake: Run Test",
+    "command": "ctest",
+    "args": ["--test-dir", "build", "-R", "$ZED_CUSTOM_cmake_test", "--output-on-failure"],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "tags": ["cmake-test"],
+    "reveal": "always"
+  },
+  {
+    "label": "CMake: Run All Tests",
+    "command": "ctest",
+    "args": ["--test-dir", "build", "--output-on-failure"],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "tags": ["cmake-project"],
+    "reveal": "always"
+  },
+  {
+    "label": "CMake: Clean",
+    "command": "cmake",
+    "args": ["--build", "build", "--target", "clean"],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "tags": ["cmake-project"],
+    "reveal": "always"
+  },
+  {
+    "label": "CMake: Install",
+    "command": "cmake",
+    "args": ["--install", "build"],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "tags": ["cmake-project"],
+    "reveal": "always"
+  },
+  {
+    "label": "CMake: Reconfigure",
+    "command": "cmake",
+    "args": ["--fresh", "-B", "build"],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "tags": ["cmake-project"],
+    "reveal": "always"
+  }
+]

@@ -1,0 +1,5 @@
+/target
+extension.wasm
+Cargo.lock
+*.log
+.DS_Store

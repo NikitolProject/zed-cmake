@@ -1,0 +1,6 @@
+[submodule "grammars/cmake"]
+	path = grammars/cmake
+	url = https://github.com/uyha/tree-sitter-cmake
+[submodule "neocmakelsp-fast"]
+	path = neocmakelsp-fast
+	url = https://github.com/NikitolProject/neocmakelsp-fast
