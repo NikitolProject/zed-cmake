@@ -1,49 +1,53 @@
-# zed-cmake
+🛠️ zed-cmake 🚀
 
-CMake support for [Zed](https://zed.dev) editor.
+✨ CMake support for Zed editor ✨
+🌈 Сделаем твою разработку на C++ в Zed просто легендарной! 🌈
+🌟 Основные фишки (Features) 🌟
 
-## Features
+    🎨 Syntax highlighting — Красивая подсветка через tree-sitter-cmake 🌈
 
-- Syntax highlighting via [tree-sitter-cmake](https://github.com/uyha/tree-sitter-cmake)
-- LSP integration via [neocmakelsp-fast](https://github.com/NikitolProject/neocmakelsp-fast)
-  - Intelligent code completion
-  - Real-time diagnostics and linting
-  - Go to definition
-  - Hover documentation
-  - Code formatting
-  - Rename support
-- Build tasks (Configure, Build, Clean, Install, Run)
+    🧠 LSP integration — Умный мозг через neocmakelsp-fast 🤖💨
 
-## Requirements
+        🎯 Intelligent code completion — Дописывает код за тебя (почти как магия!) ✨
 
-Install `neocmakelsp-fast`:
+        🚫 Real-time diagnostics — Видит ошибки раньше, чем ты нажмешь "Build" 🔍
 
-```bash
-# From source
+        🏃 Go to definition — Прыгай по коду как ниндзя 🥷
+
+        📖 Hover documentation — Подсказки при наведении 📋
+
+        💅 Code formatting — Твой код всегда будет выглядеть на все 💯
+
+        🏷️ Rename support — Меняй имена без боли и страданий ✏️
+
+    🏗️ Build tasks — Полный цикл: Configure ⚙️, Build 🔨, Clean 🧹, Install 📦, Run 🏃‍♂️
+
+🛠️ Что нужно установить (Requirements) 🛠️
+
+Тебе понадобится мощный neocmakelsp-fast! 🦾
+Bash
+
+# Собираем из исходников (для суровых профи) 💪
 cargo install --git https://github.com/NikitolProject/neocmakelsp-fast
 
-# Or download from releases
-# https://github.com/NikitolProject/neocmakelsp-fast/releases
-```
+# Или просто скачай готовый бинарник тут 👇
+# https://github.com/NikitolProject/neocmakelsp-fast/releases 📦
 
-## Installation
+📥 Как установить (Installation) 📥
+🏢 Через Zed Extensions
 
-### From Zed Extensions
+Просто вбей в поиске "CMake" внутри Zed и жми кнопку Install! 🖱️💥
+👨‍💻 Режим разработчика (Dev Extension)
+Bash
 
-Search for "CMake" in Zed Extensions and install.
+git clone https://github.com/NikitolProject/zed-cmake 📂
+# В самом Zed: Extensions → Install Dev Extension → выбери папку zed-cmake 📁✨
 
-### Dev Extension
+⚙️ Настройка (Configuration) ⚙️
 
-```bash
-git clone https://github.com/NikitolProject/zed-cmake
-# In Zed: Extensions → Install Dev Extension → select zed-cmake folder
-```
+Закинь этот сочный конфиг в свой ~/.config/zed/settings.json 📝👇:
+JSON
 
-## Configuration
-
-Add to your `~/.config/zed/settings.json`:
-
-```json
 {
   "lsp": {
     "cmake": {
@@ -55,8 +59,7 @@ Add to your `~/.config/zed/settings.json`:
     }
   }
 }
-```
 
-## License
+📜 Лицензия (License) 📜
 
-MIT
+📜 MIT — Свобода во всем! 🕊️🔓
