@@ -1,3 +1,0 @@
-[submodule "grammars/cmake"]
-	path = grammars/cmake
-	url = https://github.com/uyha/tree-sitter-cmake
