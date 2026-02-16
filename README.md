@@ -5,26 +5,16 @@ CMake support for [Zed](https://zed.dev) editor.
 ## Features
 
 - Syntax highlighting via [tree-sitter-cmake](https://github.com/uyha/tree-sitter-cmake)
-- LSP integration via [neocmakelsp-fast](https://github.com/NikitolProject/neocmakelsp-fast)
+- LSP integration via [neocmakelsp-fast](https://github.com/NikitolProject/neocmakelsp-fast) (auto-installed)
   - Intelligent code completion
+  - Path completions with directory caching
   - Real-time diagnostics and linting
   - Go to definition
   - Hover documentation
+  - Signature help
   - Code formatting
   - Rename support
-- Build tasks (Configure, Build, Clean, Install, Run)
-
-## Requirements
-
-Install `neocmakelsp-fast`:
-
-```bash
-# From source
-cargo install --git https://github.com/NikitolProject/neocmakelsp-fast
-
-# Or download from releases
-# https://github.com/NikitolProject/neocmakelsp-fast/releases
-```
+- Build tasks (Configure, Build, Clean, Install, Run, Test)
 
 ## Installation
 
